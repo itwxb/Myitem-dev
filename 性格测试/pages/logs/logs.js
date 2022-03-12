@@ -264,7 +264,6 @@ Page({
                    dataobj[j + 1] = temp;
                }
            }
-    
        }
        console.log(dataobj);
        this.setData({
