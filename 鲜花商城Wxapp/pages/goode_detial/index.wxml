@@ -1,0 +1,42 @@
+ <!-- 轮播图 -->
+ <view class="bodyf">
+    <view class="page-section  page-section-spacing swiper">
+    <swiper indicator-dots="{{indicatorDots}}" autoplay="{{autoplay}}" interval="{{interval}}" duration="{{duration}}">
+      <block wx:for="{{swiper}}" wx:key="*this">
+        <swiper-item>
+          <image class="swiperimg" src="{{item.url}}"></image>
+        </swiper-item>
+      </block>
+    </swiper>
+  </view>
+ 
+
+
+ <!-- out -->
+ </view>
+<!-- 商品信息 -->
+<view class="goods-info" >
+      <view class="goods-info-top-container">
+        <view class="goods-profile">
+          <view class="p"><text>¥</text> {{goodsarr.pushTxtlin}}</view>
+          <view 
+            class="goods-price" style='color:#aaa;text-decoration:line-through;padding: 15rpx 0rpx 0rpx 15rpx;'>
+            <text>¥</text> {{goodsarr.pushTxtxu}}</view>
+        </view>
+     
+      </view>
+      <view class="goods-title">{{goodsarr.pushName}}</view>
+      <view class="characteristic">{{goodsarr.pushTxtlin2}}</view>
+      <view class="characteristic">{{goodsarr.pushTxtlin1}}</view>
+      <view class="characteristic">{{goodsarr.pushTxtlin3}}</view>
+      <view>
+      <image class="goods_datalimg" src="{{goodsarr.url}}"></image>
+      </view>
+     
+    </view>
+    <!-- 按钮 -->
+    <view>
+      <van-stepper value="{{ num}}" bind:change="onChange" />
+
+      <van-button type="primary" block bindtap="addcar">块级元素</van-button>
+    </view>

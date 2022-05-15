@@ -1,0 +1,44 @@
+{
+  "pages":[
+    "pages/index/index",
+    "pages/car/index",
+    "pages/fenlei/index",
+    "pages/goode_detial/index",
+    "pages/logs/logs",
+    "pages/my/index"
+
+  ],
+  "window":{
+    "backgroundTextStyle":"light",
+    "navigationBarBackgroundColor": "#fff",
+    "navigationBarTitleText": "Weixin",
+    "navigationBarTextStyle":"black"
+  },
+  "tabBar": {
+    "list": [{
+      "pagePath": "pages/index/index",
+      "text": "首页",
+      "iconPath": "/img/index_wei.png",
+      "selectedIconPath": "/img/index_xuan.png"
+    },
+    {
+      "pagePath": "pages/fenlei/index",
+      "text": "分类",
+      "iconPath": "/img/fenlei_wei.png",
+      "selectedIconPath": "/img/fenlei_xuan.png"
+    },
+    {
+      "pagePath": "pages/car/index",
+      "text": "购物车",
+      "iconPath": "/img/car_wei.png",
+      "selectedIconPath": "/img/car_xuan.png"
+    },
+    {
+      "pagePath": "pages/my/index",
+      "text": "我的",
+      "iconPath": "/img/my_wei.png",
+      "selectedIconPath": "/img/my_xuan.png"
+    }]
+  },
+  "sitemapLocation": "sitemap.json"
+}

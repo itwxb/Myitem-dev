@@ -1,0 +1,32 @@
+/* pages/fenlei/index.wxss */
+.cont{
+    display: flex;
+}
+.right_list{
+    display: flex;
+    flex-wrap: wrap;
+    padding: 10rpx 20rpx;
+    justify-content: space-between;
+}
+.right_list_item{
+    text-align: center;
+    background-color: aqua;
+    height: 220rpx;
+    margin: 20rpx 0;
+
+}
+.right_list_item view{
+    margin-top: 10rpx;
+    width: 150rpx;
+    font-size: 20rpx;
+}
+.right_list::after{
+    height: 0;
+    content: "";
+    width: 150rpx;
+  }
+.right_list_item image{
+    width: 150rpx;
+    height: 140rpx;
+
+}

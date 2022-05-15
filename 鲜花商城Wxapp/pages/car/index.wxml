@@ -1,0 +1,23 @@
+<!--pages/car/index.wxml-->
+<view wx:if="{{status}}">
+    <van-checkbox value="{{ checked }}" bind:change="allonChange">全选</van-checkbox>
+    <button bindtap="delete">删除</button>
+    <van-checkbox-group value="{{ result }}" bind:change="onChange">
+    <view wx:for="{{carlist}}">
+  <van-checkbox  name="{{item.id}}"> 
+
+  </van-checkbox>
+  <view>{{item.pushName}}</view>
+  <view>{{item.falsePrice}}</view>
+  <view>{{item.truePrice}}</view>
+  <view>{{item.number}}</view>
+  <image src="{{item.url}}"></image>
+
+    </view>
+</van-checkbox-group>
+</view>
+<view wx:if="{{!status}}">
+
+
+你好
+</view>

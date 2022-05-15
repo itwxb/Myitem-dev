@@ -1,0 +1,90 @@
+.bodyf{
+  padding: 0 20rpx;
+}
+
+
+
+
+.field-class{
+  padding: 0;
+}
+/* swiper */
+.swiperimg{
+  width: 100%;
+  height: 100%;
+}
+/* icon */
+.icon_class{
+  margin: 20rpx 0;
+  color: red;
+  font-size: 25rpx;
+  display: flex;
+  justify-content: space-evenly;
+}
+.icon_class text{
+  color: aqua;
+  text-decoration: underline;
+}
+/* 商品分类 */
+.goodsfl{
+  display: flex;
+  justify-content: space-between;
+  font-size: 20rpx;
+  text-align: center;
+  margin: 20rpx 0;
+}
+
+.goods image{
+  width: 120rpx;
+  height: 120rpx;
+}
+/* 模托 */
+.motuoimg image{
+  width: 900rpx;
+  height: 300rpx;
+  margin-top: -60rpx;
+  margin-left: -50rpx;
+}
+/* 推广1 */
+.tuiguang1{
+   background-color: pink;
+   display: flex;
+   flex-wrap: wrap;
+   justify-content: space-between;
+   align-content: space-between;
+   height: 450rpx;
+   margin-bottom: 20rpx;
+}
+.tuiguang1_item{
+  font-size: 16rpx;
+  width: 340rpx;
+  display: flex;
+  background-color: #ffffff;
+  border: 1px solid rgb(145, 38, 38);
+  
+}
+.tuiguang1_item_text{
+  text-align: center;
+  padding-top: 60rpx;
+}
+.tuiguang1_item image{
+  width: 200rpx;
+  height: 200rpx;
+}
+.tuiguang3 image{
+  width: 100%;
+  height: 2000rpx;
+}
+/* 商品 */
+.goods1{
+  background-color: pink;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+.goods1_item{
+  width: 350rpx;
+}
+.goods1_item image{
+  width: 100%;
+}

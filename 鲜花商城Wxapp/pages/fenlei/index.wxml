@@ -1,0 +1,24 @@
+<view class="cont">
+    <view>
+    <van-sidebar active-key="{{ activeKey }}" bind:change="onChange" >
+  <van-sidebar-item wx:for="{{leftlist}}" wx:key="index" title="{{item.cateName}}" />
+
+</van-sidebar>
+</view>
+<!-- 右边列表 -->
+<view class="right_list">
+
+<view wx:for="{{rightlist}}" wx:key="index" class="right_list_item">
+<image  src="{{item.url}}"></image>
+<view wx:if="{{item.color}}" style="background-color: {{item.color}}; height: 50px;margin-left: 7px;margin-bottom: 20px;margin-top: -120rpx;width: 60px;"></view>
+<view>{{item.minCateName}}</view>
+</view>
+
+
+
+</view>
+
+<!-- 
+<view bindtap="towx">大大</view> -->
+<!-- bodyend -->
+</view>

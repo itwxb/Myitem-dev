@@ -1,0 +1,124 @@
+<view class='bodyf'>
+
+  <!-- 搜索框 -->
+  <view>
+    <van-search input-align="center" placeholder="请输入搜索关键词" class="seacher231" />
+  </view>
+  <!-- 轮播图 -->
+  <view class="page-section  page-section-spacing swiper">
+    <swiper indicator-dots="{{indicatorDots}}" autoplay="{{autoplay}}" interval="{{interval}}" duration="{{duration}}">
+      <block wx:for="{{background}}" wx:key="*this">
+        <swiper-item>
+          <image class="swiperimg" src="{{item.url}}"></image>
+        </swiper-item>
+      </block>
+    </swiper>
+  </view>
+  <!-- 图标列 -->
+  <view class="icon_class">
+    <view>
+      <van-icon name="passed" />匠心花亿
+    </view>
+    <view>
+      <van-icon name="passed" />优质体验
+    </view>
+    <view>
+      <van-icon name="passed" />2小时送花
+    </view>
+    <view>
+      <van-icon name="passed" />全国<text>36541</text>家店铺
+    </view>
+
+  </view>
+  <!-- 滚动栏 -->
+  <view>
+    <van-notice-bar background='#fff' color='red' left-icon="volume-o" text="在代码阅读过程中人们说脏话的频率是衡量代码质量的唯一标准。" />
+  </view>
+  <!-- 商品分类 -->
+  <view class="goodsfl">
+    <view wx:for="{{goodsflarr}}" class="goods">
+      <image src="{{item.url}}"></image>
+      <view>{{item.pushName}}</view>
+    </view>
+  </view>
+  <!-- 摩托图 -->
+  <view wx:for="{{motuo}}" class="motuoimg">
+  <image src="{{item.url}}"></image>
+  </view>
+  <!-- 推广1 -->
+  <view class="tuiguang1">
+  <view wx:for="{{tuiguang1}}" class="tuiguang1_item">
+  <view class="tuiguang1_item_img">
+    <image src="{{item.url}}"></image>
+  </view>
+<view class="tuiguang1_item_text">
+  <view>{{item.pushName}}</view>
+
+  <view>{{item.pushTxt}}</view>
+</view>
+
+  </view>
+  </view>
+  <!-- 推广2 -->
+  <view class="tuiguang1">
+  <view wx:for="{{tuiguang2}}" class="tuiguang1_item">
+  <view class="tuiguang1_item_img">
+    <image src="{{item.url}}"></image>
+  </view>
+<view class="tuiguang1_item_text">
+  <view>{{item.pushName}}</view>
+
+  <view>{{item.pushTxt}}</view>
+</view>
+
+  </view>
+  </view>
+  <!-- 推广3 -->
+  <view class="tuiguang3">
+<view wx:for="{{tuiguang3}}">
+  <image src="{{item.url}}"></image>
+</view>
+  </view>
+  <!-- 商品1 -->
+  <view class="goods1">
+
+  <view class="goods1_item" wx:for="{{goods1}}" bindtap="toDetailsTap" data-id="{{item.id}}" >
+  <image src="{{item.url}}"></image>
+<view> {{item.pushName}}</view>
+<view>{{item.pushTxt}}</view>
+<view>{{item.pushTxtx}}</view>
+<view>{{item.pushTxtxu}}{{item.pushTxtlin}}</view>
+<view>{{item.pushTxtlinlin}}</view>
+  </view>
+  
+  <view class="goods1_item" wx:for="{{goods2}}" bindtap="toDetailsTap" data-id="{{4+item.id}}">
+  <image src="{{item.url}}"></image>
+<view> {{item.pushName}}</view>
+<view>{{item.pushTxt}}</view>
+<view>{{item.pushTxtx}}</view>
+<view>{{item.pushTxtxu}}{{item.pushTxtlin}}</view>
+<view>{{item.pushTxtlinlin}}</view>
+  </view>
+  
+  <view class="goods1_item" wx:for="{{goods3}}" bindtap="toDetailsTap" data-id="{{8+item.id}}">
+  <image src="{{item.url}}"></image>
+<view> {{item.pushName}}</view>
+<view>{{item.pushTxt}}</view>
+<view>{{item.pushTxtx}}</view>
+<view>{{item.pushTxtxu}}{{item.pushTxtlin}}</view>
+<view>{{item.pushTxtlinlin}}</view>
+  </view>
+
+
+
+
+  
+  </view>
+
+
+
+
+
+
+<!-- 最外 -->
+</view>
