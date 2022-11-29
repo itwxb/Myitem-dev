@@ -7,7 +7,7 @@
 3. 手机端
 
 #### 所用技术
-Vue / 微信小程序 / Axios / Vant 
+Vue / 微信小程序 / Axios / Vant / 
 
 
 
