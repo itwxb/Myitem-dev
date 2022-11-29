@@ -1,0 +1,48 @@
+{
+  "pages":[
+    "pages/index/index",
+    "pages/check/check",
+    "pages/detail/detail",
+    "pages/list/list",
+    "pages/logs/logs",
+    "pages/play/play"
+
+  ],
+  "tabBar": {
+    "color": "#a9b7b7",
+      "selectedColor": "#11cd6e",
+      "borderStyle": "white",
+    
+        "list": [
+          {
+            "iconPath": "./img/index.png",
+            "selectedIconPath": "/img/index_s.png",
+            "pagePath": "pages/index/index",
+            "text": "首页"
+          },
+          {
+            "iconPath": "./img/list.png",
+            "selectedIconPath": "/img/list_S.png",
+            "pagePath": "pages/list/list",
+            "text": "列表"
+
+            
+          },
+          {
+            "iconPath": "./img/user.png",
+            "selectedIconPath": "/img/user_S.png",
+            "pagePath": "pages/logs/logs",
+            "text": "我的"
+          }
+  
+        ]
+      },
+  "window":{
+    "backgroundTextStyle":"light",
+    "navigationBarBackgroundColor": "#fff",
+    "navigationBarTitleText": "校园点歌台",
+    "navigationBarTextStyle":"black"
+  },
+  "style": "v2",
+  "sitemapLocation": "sitemap.json"
+}

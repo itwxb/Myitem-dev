@@ -1,0 +1,17 @@
+<view class="weui-cells weui-cells_after-title">
+      <radio-group bindchange="radioChange">
+        <label class="weui-cell weui-check__label" wx:for="{{items}}" wx:key="*this">
+
+          <block class="weui-cell__hd">
+            <radio value="{{item.value}}" checked="{{item.checked}}"/>
+          </block>
+          <block class="weui-cell__bd">{{item.name}}</block>
+        </label>
+      </radio-group>
+    </view>
+    <view>
+    <block wx:if="{{status == 'redplay'}}">1</block>
+    
+    <block wx:else>2</block>
+    
+    </view>

@@ -1,0 +1,44 @@
+<view class="weui-cells weui-cells_after-title">
+  <radio-group bindchange="radioChange">
+    <label class="weui-cell weui-check__label" wx:for="{{items}}" wx:key="*this">
+
+      <block class="weui-cell__hd">
+        <radio value="{{item.value}}" checked="{{item.checked}}" />
+      </block>
+      <block class="weui-cell__bd">{{item.name}}</block>
+    </label>
+  </radio-group>
+</view>
+<view>
+  <block wx:if="{{status == 'redcheck' }}">
+    <i-cell-group wx:for="{{redcheck}}" wx:key="*this">
+      <i-cell title="{{item.songname}}" label="祝福语：{{item.greeting}}"  >
+        <i-cell slot='footer' is-link>
+          <view class="r_text1">{{item.time}}
+          </view>
+   
+        </i-cell>
+      </i-cell>
+    </i-cell-group>
+
+  </block>
+  <block wx:elif="{{status == 'checked'}}">   <i-cell-group wx:for="{{checked}}" wx:key="*this">
+      <i-cell title="{{item.songname}}" label="祝福语：{{item.greeting}}"  >
+        <i-cell slot='footer' is-link>
+          <view class="r_text1">{{item.time}}
+          </view>
+   
+        </i-cell>
+      </i-cell>
+    </i-cell-group></block>
+  <block wx:else>   <i-cell-group wx:for="{{uncheck}}" wx:key="*this">
+      <i-cell title="{{item.songname}}" label="祝福语：{{item.greeting}}"  >
+        <i-cell slot='footer' is-link>
+          <view class="r_text1">{{item.time}}
+          </view>
+   
+        </i-cell>
+      </i-cell>
+    </i-cell-group></block>
+
+</view>

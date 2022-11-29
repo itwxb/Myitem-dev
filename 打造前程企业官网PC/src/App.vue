@@ -1,10 +1,9 @@
 <template>
   <div id="app">
     <!-- <daohang> </daohang> -->
-   
+
     <router-view></router-view>
     <!-- <dibudaohang> </dibudaohang> -->
-
   </div>
 </template>
 
@@ -24,5 +23,6 @@ export default {
 <style>
 body {
   margin: 0;
+  overflow-x: hidden;
 }
 </style>

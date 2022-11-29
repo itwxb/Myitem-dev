@@ -1,0 +1,15 @@
+/* pages/list/list.wxss */
+
+.r_text2 {
+    font-size: 25rpx;
+    margin-right: -20rpx;
+    
+}
+
+.r_text1 {
+    line-height: 1.2;
+    font-size: 12px;
+    color: #80848f;
+    margin-bottom: 15rpx;
+    padding-right: 20rpx;
+}

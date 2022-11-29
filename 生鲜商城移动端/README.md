@@ -1,24 +1,20 @@
-# sxpt
+# 生鲜商城 移动网页端
 
-## Project setup
+>api 已挂 页面无法正常运行 
+## 第一步
 ```
 npm install
 ```
 
-### Compiles and hot-reloads for development
+### 启动
 ```
 npm run serve
 ```
 
-### Compiles and minifies for production
+### 打包
 ```
 npm run build
 ```
 
-### Lints and fixes files
-```
-npm run lint
-```
 
-### Customize configuration
-See [Configuration Reference](https://cli.vuejs.org/config/).
+

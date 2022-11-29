@@ -1,0 +1,8 @@
+{
+  "usingComponents": {
+    "i-button": "../../dist/button/index",
+    "i-icon": "../../dist/icon/index",
+    "i-notice-bar": "../../dist/notice-bar/index",
+    "i-input": "../../dist/input/index"
+  }
+}

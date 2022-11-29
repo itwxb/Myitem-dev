@@ -1,0 +1,29 @@
+/**index.wxss**/
+/* swiper star */
+.swiper_img{
+    width: 100%;
+    
+}
+/* .swiper_i1{
+    height: 240px;
+} */
+/* swiper end */
+
+/* text轮播 star */
+.loop{
+   margin: 10px 0 20px 0;
+}
+/* text 轮播 end */
+
+/* 输入框 star */
+
+.mini-btn{
+    margin: 50px 0 0 80px;
+}
+.lastArea{
+   
+    font-size: 22rpx;
+    margin-left:570rpx ;
+}
+
+/* 输入框end */

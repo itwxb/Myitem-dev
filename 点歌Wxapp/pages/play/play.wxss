@@ -1,0 +1,7 @@
+/* pages/check/check.wxss */
+.weui-cell{
+    padding: 101rpx ;
+}
+.weui-cells{
+    margin: 10rpx;
+}

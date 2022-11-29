@@ -1,0 +1,11 @@
+<i-cell-group wx:for="{{songarr}}" wx:key="*this"  >
+    <i-cell title="{{item.songname}}" label="祝福语：{{item.greeting}}">
+        <i-cell slot='footer'>
+            <view  class="r_text1" >{{item.time}}
+            </view>
+       <view class="r_text2">
+      {{item.type}}
+       </view>
+        </i-cell>
+    </i-cell>
+</i-cell-group>

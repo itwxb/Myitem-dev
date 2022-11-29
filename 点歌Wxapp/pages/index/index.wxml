@@ -1,0 +1,33 @@
+<!--index.wxml-->
+<!-- 轮播图 -->
+<view class="page-section page-section-spacing swiper">
+  <swiper class="swiper_i1" indicator-dots="{{indicatorDots}}" autoplay="{{autoplay}}" interval="{{interval}}" duration="{{duration}}">
+    <block wx:for="{{background}}" wx:key="*this">
+      <swiper-item>
+        <image class="swiper_img" src="{{item}}"></image>
+      </swiper-item>
+    </block>
+  </swiper>
+</view>
+<!-- 滚动栏 -->
+<view class="loop">
+  <i-notice-bar i-class="textloop" icon="systemprompt" loop>
+    2018年世界杯,将于6月14日至7月15日举行;
+  </i-notice-bar>
+</view>
+<!-- 输入框 -->
+<view>
+  <i-panel title="基础用法">
+    <i-input model:value="{{ diansong }}" type="textarea" title="点歌人" autofocus placeholder="点歌人姓名" />
+    <i-input model:value="{{ jiesong }}" type="textarea" title="接歌人" placeholder="接歌人姓名" />
+    <i-input model:value="{{ songname }}" type="textarea"  title="歌名" placeholder="只限中文歌" />
+    <i-input model:value="{{ say }}" bind:change='getDataBindTap' type="textarea" i-class="saytext" title="想说的话" placeholder="请输入想说的话(最多200字)" maxlength="200" />
+    <text class="lastArea">还能输入{{lastArea}}个字</text>
+  </i-panel>
+
+  <view class="btmbottom"> 
+    <button class="mini-btn" bindtap="btn_empty" type="default" size="mini">清空</button>
+    <button class="mini-btn" bindtap="btn_submit" type="primary" size="mini">提交</button>
+
+  </view>
+</view>
